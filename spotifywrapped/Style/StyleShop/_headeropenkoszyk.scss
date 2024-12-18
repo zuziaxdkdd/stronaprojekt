@@ -1,0 +1,77 @@
+.koszyk-modal {
+  width: 300px;
+  background-color: $color1; /* Tło jak w menu */
+  border: 4mm ridge $colorSPOTIFY; /* Obramowanie */
+  display: none; /* Początkowo ukryte */
+  z-index: 1000;
+  position: fixed;
+  top: 15vh; /* Pozycja koszyka */
+  right: 2em;
+  margin-left: auto;
+  padding: 2em;
+  min-width: 300px; /* Minimalna szerokość koszyka */
+  max-width: 90vw; /* Maksymalna szerokość koszyka (zajmuje maks. 90% szerokości ekranu) */
+  overflow-x: auto; /* Umożliwia przewijanie w poziomie, jeśli zawartość przekroczy szerokość */
+  overflow-y: auto; /* Dodanie przewijania w pionie, jeśli elementy są zbyt wysokie */
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh; /* Odstępy między elementami */
+    max-height: 60vh; /* Maksymalna wysokość listy, aby nie wychodziła poza ekran */
+    overflow-y: auto; /* Przewijanie w pionie w razie potrzeby */
+    width: 100%; /* Rozciąga na całą szerokość koszyka */
+
+    li {
+      width: 100%; /* Pełna szerokość dla elementów */
+      border-bottom: 2px solid $colorSPOTIFY; /* Linia oddzielająca */
+      padding: 10px 0;
+
+      span {
+        display: block;
+        font-size: $font4;
+        text-align: center;
+        color: #333333;
+        font-weight: bold;
+      }
+
+      button {
+        background-color: $colorSPOTIFY;
+        border-radius: 6px;
+        border: 1px solid #1c6508;
+        cursor: pointer;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: $font4;
+        font-weight: bold;
+        padding: 10px 20px;
+        width: 100%; /* Pełna szerokość przycisku */
+        text-align: center;
+        margin-top: 10px; /* Odstęp między nazwą a przyciskiem */
+      }
+
+      button:hover {
+        background-color: darken($colorSPOTIFY, 10%);
+      }
+    }
+  }
+
+  button#closeKoszyk {
+    margin-top: 20px;
+    background-color: $colorSPOTIFY;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+
+  button#closeKoszyk:hover {
+    background-color: darken(#1d891b, 10%);
+  }
+}

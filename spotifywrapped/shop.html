@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sklepik nyga</title>
+    <link rel="icon" type="image/x-icon" href="./Style/Img/spotifyikonka.png" />
+    <link rel="stylesheet" href="./Style/style_index.css" />
+    <script src="./Scritps/values.js" defer></script>
+    <script src="./Scritps/applicationMenu.js" defer></script>
+    <script src="./Scritps/applicationKoszyk.js" defer></script>
+    <script src="./Scripts/koszyk.js" defer></script> 
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__image1">
+        <a href="https://open.spotify.com/" target="_blank">
+          <img src="./Style/Img/spotifynaglowekdone.png" alt="" />
+        </a>
+      </div>
+      <div class="header__image2">
+        <img src="./Style/Img/wyszukiwarka.png" alt=""/>
+      </div>
+
+      <div class="header__menu" id="menu">
+        <div></div>
+        <h1>Menu</h1>
+        <div></div>
+      </div>
+
+      <div class="header__koszyk" id="koszykButton">
+        <div></div>
+        <h1>Koszyk</h1>
+        <div></div>
+      </div>
+    </header>
+
+    <header class="header__menu--open" id="menuContainer">
+      <ul>
+        <li><a href="index.html">Główne statystyki</a></li>
+        <li><a href="shop.html">Sklep</a></li>
+        <li><a href="koszyk.html">Koszyk</a></li>
+        <li><a href="tyler.html">Tyler, the creator</a></li>
+        <li><a href="top5.html">Top5</a></li>
+        <li><a href="dzejdzejka.html">UlubionyWykonawca</a></li>
+        <li>
+          <button class="header__menu--close__list" id="menu--close">
+            Close
+          </button>
+        </li>
+      </ul>
+    </header>
+
+    <div class="koszyk-modal" id="koszykModal" style="display: none;">
+      <div class="koszyk-modal-content">
+        <h2>Twój Koszyk</h2>
+        <ul id="koszykList"></ul>
+        <button id="closeKoszyk">Zamknij</button>
+      </div>
+    </div>
+
+<!-- ----------------------------- NAGLOWEK ---------------------------------------------------- -->
+
+<section class="naglowek">
+  <div class="naglowek__content">
+    <div class="naglowek__content--naglowek">
+      <h1>sklep murzynski (black friday)</h1>
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------------- NIGGER ---------------------------------------------------- -->
+
+    <section class="plytyniga">
+      <div class="plytyniga__content">    
+        <div class="plytyniga__content--image1">
+          <img src="./Style/Img/eminemshow.png" alt="">
+          <p>Eminem - The Eminem Show</p>
+          <p>4̶0̶ ̶z̶ł̶  ! 30 zł !</p>
+          <button class="add-to-cart" data-item="Eminem - The Eminem Show">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image2">
+          <img src="./Style/Img/damn.png" alt="">
+          <p>Damn - Kendrick Lamar</p>
+          <p>5̶0̶ ̶z̶ł̶  ! 40 zł !</p>
+          <button class="add-to-cart" data-item="Damn - Kendrick Lamar">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image3">
+          <img src="./Style/Img/longliveasap.png" alt="">
+          <p>ASAP Rocky - Live. Love. ASAP</p>
+          <p>6̶0̶ ̶z̶ł̶  ! 45 zł !</p>
+          <button class="add-to-cart" data-item="ASAP Rocky - Live. Love. ASAP">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image4">
+          <img src="./Style/Img/graduation.jpg" alt="">
+          <p>Kanye West - Graduation</p>
+          <p>7̶0̶ ̶z̶ł̶  ! 60 zł !</p>
+          <button class="add-to-cart" data-item="Kanye West - Graduation">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image5">
+          <img src="./Style/Img/nirvana.png" alt="">
+          <p>Nirvana - Nevermind</p>
+          <p>4̶0̶ ̶z̶ł̶  ! 30 zł !</p>
+          <button class="add-to-cart" data-item="Nirvana - Nevermind">Dodaj do koszyka</button>
+        </div>
+      </div>
+    </section>
+    <section class="plytyniga">
+      <div class="plytyniga__content">    
+        <div class="plytyniga__content--image1">
+          <img src="./Style/Img/quebo.png" alt="">
+          <p>Quebonafide - Romantic Psycho</p>
+          <p>6̶0̶ ̶z̶ł̶  ! 50 zł !</p>
+          <button class="add-to-cart" data-item="Quebonafide - Romantic Psycho">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image2">
+          <img src="./Style/Img/demondays.jpg" alt="">
+          <p>Gorillaz - Demon days</p>
+          <p>4̶0̶ ̶z̶ł̶  ! 30 zł !</p>
+          <button class="add-to-cart" data-item="Gorillaz - Demon days">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image3">
+          <img src="./Style/Img/ladygaga.png" alt="">
+          <p>Lady gaga - The Fame</p>
+          <p>7̶0̶ ̶z̶ł̶  ! 55 zł !</p>
+          <button class="add-to-cart" data-item="Lady gaga - The Fame">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image4">
+          <img src="./Style/Img/soma.jpg" alt="">
+          <p>Taconafide - Soma 0,5 mg</p>
+          <p>5̶0̶ ̶z̶ł̶  ! 40 zł !</p>
+          <button class="add-to-cart" data-item="Taconafide - Soma 0,5 mg">Dodaj do koszyka</button>
+        </div>
+
+        <div class="plytyniga__content--image5">
+          <img src="./Style/Img/igor.png" alt="">
+          <p>Tyler, the creator - Igor</p>
+          <p>7̶0̶ ̶z̶ł̶  ! 55 zł !</p>
+          <button class="add-to-cart" data-item="Tyler, the creator - Igor">Dodaj do koszyka</button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="./Scripts/koszyk.js"></script>
+</html>
+
+<footer></footer>

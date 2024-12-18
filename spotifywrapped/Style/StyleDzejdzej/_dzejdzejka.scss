@@ -1,0 +1,53 @@
+.dzejdzejka {
+    width: 100vw;
+    padding: 2em 0;
+    background-color: $color1;
+    border-top: 1em solid $colorSPOTIFY;
+    border-left: 8em solid $colorSPOTIFY;
+    border-right: 8em solid $colorSPOTIFY;
+  
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      justify-items: center;
+      align-items: start;
+  
+      &--image1, &--image2, &--image3, &--image4, &--image5, &--image6 {
+        img {
+          width: 100%;
+          height: auto;
+          padding: 1em;
+          border-radius: 15px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+  
+      &--reels1, &--reels2 {
+        width: 100%;
+        max-width: 560px;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+  
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }

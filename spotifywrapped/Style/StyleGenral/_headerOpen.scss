@@ -1,0 +1,53 @@
+.header__menu--open {
+  width: 300px;
+  background-color: $color1;
+  border: 4mm ridge $colorSPOTIFY;
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 15vh;
+  right: 2em;
+  margin-left: auto;
+  padding: 2em;
+  
+  ul {
+    display: flex;
+    flex-direction: column; /* Kolumnowy układ */
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+
+    li {
+      width: 100%; /* Pełna szerokość dla każdego przycisku */
+      border-bottom: 2px solid $colorSPOTIFY;
+
+      button {
+        background-color: $colorSPOTIFY;
+        border-radius: 6px;
+        border: 1px solid #1c6508;
+        cursor: pointer;
+        color: #333333;
+        font-family: Arial, sans-serif;
+        font-size: $font4;
+        font-weight: bold;
+        padding: 10px 20px;
+        width: 100%; /* Ustalenie szerokości przycisku */
+        text-align: center; /* Wyrównanie tekstu w przycisku */
+      }
+
+      button:hover {
+        background-color: darken($colorSPOTIFY, 10%);
+      }
+
+      button:active {
+        top: 1px;
+        display: block;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: $font4;
+  }
+}

@@ -1,0 +1,35 @@
+// https://sass-lang.com/
+// -------------------------------------------
+@import "./StyleGenral/reset";
+@import "./StyleGenral/values";
+@import "./StyleGenral/mixin";
+@import "./StyleGenral/body";
+@import "./StyleGenral/aplay_to_all";
+// -------------------------------------------
+@import "./StyleGenral/header";
+@import "./StyleGenral/headerOpen";
+@import "./StyleGenral/footer";
+// ----------------------------------------------
+@import "./StyleIndex/topkapieciuwykonawcow";
+@import "./StyleIndex/KOCHAMTYLERA";
+@import "./StyleIndex/TACO";
+@import "./StyleIndex/ROCKY";
+@import "./StyleIndex/deftones";
+@import "./StyleIndex/kendrick";
+@import "./StyleIndex/kanye";
+// ----------------------------------------------
+@import "./StyleTyler/naglowek";
+@import "./StyleTyler/zyciorys";
+@import "./StyleTyler/kariera";
+@import "./StyleTyler/zycieprywatne";
+@import "./StyleTyler/nagrody";
+@import "./StyleShop/plytyniga";
+@import "./StyleShop/headeropenkoszyk";
+@import "./StyleKoszy/lista";
+@import"./StyleDzejdzej/dzejdzejka";
+@import"./StyleTop5/tylerbio";
+@import"./StyleTop5/tacobio";
+@import"./StyleTop5/rockybio";
+@import"./StyleTop5/deftonesbio";
+@import"./StyleTop5/kendrickbio";
+@import"./StyleTop5/kanyebio";

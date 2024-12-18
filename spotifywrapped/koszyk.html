@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koszyk</title>
+    <link rel="icon" type="image/x-icon" href="./Style/Img/spotifyikonka.png" />
+    <link rel="stylesheet" href="./Style/style_index.css" />
+    <script src="./Scritps/koszyk.js" defer></script>
+    <script src="./Scritps/values.js" defer></script>
+    <script src="./Scritps/applicationMenu.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__image1">
+        <a href="https://open.spotify.com/" target="_blank">
+          <img src="./Style/Img/spotifynaglowekdone.png" alt="Spotify Header" />
+        </a>
+      </div>
+      <div class="header__image2">
+        <img src="./Style/Img/wyszukiwarka.png" alt="Wyszukiwarka" />
+      </div>
+
+      <div class="header__menu" id="menu">
+        <div></div>
+        <h1>Menu</h1>
+        <div></div>
+      </div>
+    </header>
+
+    <header class="header__menu--open" id="menuContainer">
+      <ul>
+        <li><a href="index.html">Główne statystyki</a></li>
+        <li><a href="shop.html">Sklep</a></li>
+        <li><a href="koszyk.html">Koszyk</a></li>
+        <li><a href="tyler.html">Tyler, the creator</a></li>
+        <li><a href="top5.html">Top5</a></li>
+        <li><a href="dzejdzejka.html">UlubionyWykonawca</a></li>
+        <li>
+          <button class="header__menu--close__list" id="menu--close">Zamknij</button>
+        </li>
+      </ul>
+    </header>
+
+    <section class="naglowek">
+      <div class="naglowek__content">
+        <div class="naglowek__content--naglowek">
+          <h1>koszyk</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="lista">
+      <div class="lista__content">
+        <ul id="koszykList">
+        </ul>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>

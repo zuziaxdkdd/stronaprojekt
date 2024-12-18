@@ -1,0 +1,29 @@
+.naglowek {
+  width: 100vw;
+  border-left: 8em solid $colorSPOTIFY;
+  border-right: 8em solid $colorSPOTIFY;
+  padding: 20px 0;
+
+  &__content {
+    width: 100%;
+    height: auto;
+    @include center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+    &--naglowek {
+      width: 100%;
+      text-align: center;
+      
+      h1 {
+        font-size: 3vw;
+        font-weight: bold;
+      }
+    }
+  }
+}
+

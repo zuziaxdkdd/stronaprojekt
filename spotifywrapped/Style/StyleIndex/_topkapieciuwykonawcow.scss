@@ -1,0 +1,31 @@
+.topkapieciuwykonawcow {
+  width: 100vw;
+  border-left: 8em solid $colorSPOTIFY;
+  border-right: 8em solid $colorSPOTIFY;
+  &__content {
+    width: 100%;
+    height: auto;
+    @include center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 50px;
+    &--image {
+      width: 500px;
+      img {
+        width: 100%;
+      }
+    }
+    &--text {
+      width: 800px;
+      padding: 2em;
+      }
+      h1 {
+        font-size: 3vw;
+      }
+      h2 {
+        padding-top: 1em;
+        font-size: 0.9vw;
+      }
+    }
+  }

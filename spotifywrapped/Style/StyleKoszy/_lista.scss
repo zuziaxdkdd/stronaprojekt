@@ -1,0 +1,50 @@
+.lista {
+  width: 100vw;
+  height: 100vh; // Rozciąga na całą wysokość ekranu
+  border-top: 1em solid $colorSPOTIFY;
+  border-left: 8em solid $colorSPOTIFY;
+  border-right: 8em solid $colorSPOTIFY;
+  position: relative; // Umożliwia ustawienie listy na wierzchu
+  display: flex;
+  justify-content: center;
+  background-color: $color1; // Półprzezroczyste tło dla kontrastu
+  overflow-x: auto; // Umożliwia przewijanie w poziomie, gdy lista jest szersza niż ekran
+
+  &__content {
+    width: auto; // Dostosowanie szerokości kontenera
+    height: auto;
+    display: flex;
+    flex-direction: row; // Układ poziomy
+    gap: 1em; // Odstęp między elementami
+    align-items: flex-start; // Wyrównanie do góry kontenera
+    flex-wrap: nowrap; // Elementy nie będą się zawijać, tylko będą układać się obok siebie
+
+    &--item {
+      display: flex;
+      justify-content: space-between; // Rozdzielenie tekstu i przycisku na końce
+      align-items: center; // Wyrównanie w pionie
+      padding: 10px;
+      color: $color1;
+      background-color: #f5f5f5; // Tło dla elementów listy
+      border-radius: 5px; // Zaokrąglenie rogów
+      margin-bottom: 10px; // Odstęp między elementami
+      width: auto; // Dostosowanie szerokości elementu do zawartości
+      min-width: 250px; // Minimalna szerokość dla każdego elementu
+      max-width: 300px; // Maksymalna szerokość dla każdego elementu
+
+      .remove-btn {
+        background-color: $colorSPOTIFY; // Kolor tła dla przycisku
+        border: none;
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+          background-color: darken($colorSPOTIFY, 10%); // Ciemniejszy kolor po najechaniu
+        }
+      }
+    }
+  }
+}
